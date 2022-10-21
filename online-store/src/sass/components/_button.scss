@@ -1,0 +1,48 @@
+.btn {
+  cursor: pointer;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  color: $light-black-color;
+  background: $secondary-color;
+  border: none;
+  border-radius: 25px;
+  transition: all .3s ease;
+}
+
+.btn:active {
+  transform: scale(.96);
+}
+
+.btn:hover {
+  background: $light-yellow-color;
+}
+
+.sorting-btn {
+  padding: 11px 28px;
+}
+
+.search-btn {
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  bottom: -2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  border-radius: 0 25px 25px 0;
+  background: $secondary-color;
+  border: 1px solid $secondary-color;
+}
+
+.filter-btn {
+  align-self: center;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 890px) {
+  .filter-btn {
+    justify-self: center;
+  }
+}

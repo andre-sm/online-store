@@ -1,0 +1,106 @@
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 12px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.product {
+  color: $black-color;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all .3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+  &__name {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  &__popular-label {
+    padding: 0 6px;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 11px;
+    color: $white-color;
+    background: $orange-color;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  &__price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__cart-icon {
+    content: "";
+    background-image: url('../assets/img/to-cart.svg');
+    height: 18px;
+    width: 18px;
+    filter: invert(100%) sepia(0%) saturate(7425%) hue-rotate(134deg) brightness(121%) contrast(116%);
+  }
+
+  &__favorite-icon {
+    content: "";
+    background: url('../assets/img/favorite.svg') no-repeat;
+    height: 22px;
+    width: 25px;
+    filter: sepia(6%) saturate(443%) hue-rotate(333deg) brightness(114%) contrast(78%);
+    cursor: pointer;
+    transition: all .3s linear; 
+  }
+
+  &__favorite-icon:hover {
+    filter: invert(54%) sepia(89%) saturate(330%) hue-rotate(313deg) brightness(106%) contrast(104%);
+  }
+
+  &__favorite-icon.active {
+    filter: invert(52%) sepia(62%) saturate(5405%) hue-rotate(336deg) brightness(100%) contrast(102%);
+  }
+}
+
+.product:hover {
+  box-shadow: rgb(0 0 0 / 16%) 0px 4px 8px 0px, rgb(0 0 0 / 8%) 0px 0px 2px 1px;
+}
+
+.product.active {
+  box-shadow: rgb(226, 191, 0) 0px 1px 4px;
+}
+
+.product-feature {
+  margin-bottom: 5px;
+}
+
+.cart-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: $light-grey-color;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all .3s; 
+}
+
+.cart-btn:hover {
+  background-color: $orange-color;
+}
+
+.product.active .cart-btn {
+  background-color: $secondary-color;
+}

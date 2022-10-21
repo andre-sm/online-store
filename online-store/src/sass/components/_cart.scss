@@ -1,0 +1,27 @@
+.cart {
+  display: flex;
+  position: relative;
+
+  &__icon {
+    content: "";
+    background-image: url('../assets/img/cart.svg');
+    height: 48px;
+    width: 48px;
+  }
+
+  &__number {
+    position: absolute;
+    right: -9px;
+    bottom: -10px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $secondary-color;
+    color: $light-black-color;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
