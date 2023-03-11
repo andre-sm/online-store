@@ -1,5 +1,5 @@
 
-## RS School 2022 Q1 Online-Store Task
+## RS School 2022Q1 "Online-Store" Task
 #### Task: [Online-Store](https://github.com/rolling-scopes-school/tasks/tree/master/tasks/online-store)
 #### [Deploy](https://rolling-scopes-school.github.io/andre-sm-JSFE2022Q1/online-store/)
 
